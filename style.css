@@ -1,0 +1,43 @@
+html, body{
+    margin: 0;
+}
+
+.fields{
+    display: inline-block;
+    border-left: 1px solid rgba(181, 168, 168, 0.886);
+    border-top: 1px solid rgba(181, 168, 168, 0.886);
+    margin: 20px;
+    overflow: hidden;
+}
+
+.fields > div{
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid rgba(181, 168, 168, 0.886);
+    border-bottom: 1px solid rgba(181, 168, 168, 0.886);
+    float: left;
+}
+.fields > div.row-start{
+        clear: both;
+    }
+
+.fields > div[data-game='fruit']{
+    border-radius: 8px;
+    background: #f00;
+}
+
+.fields > div[data-game='snake']{
+    background: #ff0;
+}
+
+.fields > div[data-game='wall']{
+    background: rgba(9, 2, 2, 0.708);
+}
+.divScore > p{
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: rgb(227, 151, 172);
+}
